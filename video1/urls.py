@@ -5,7 +5,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    (r'^$', direct_to_template, {'template': 'index.html'}),
+    (r'^tinymce/', include('tinymce.urls')),
+    (r'^$', 'pages.views.MainHomePage'),
     (r'^beers/$', 'beer.views.BeersAll'),
     (r'^beers/(?P<beerslug>.*)/$', 'beer.views.SpecificBeer'),
     (r'^brewerys/(?P<breweryslug>.*)/$', 'beer.views.SpecificBrewery'),

@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
+    <div id='home_copy'>
+        {{ homepage.homecopy|safe }}
+    </div>
     <a href='/beers/'>View the Beers List
 {% endblock %}
 
