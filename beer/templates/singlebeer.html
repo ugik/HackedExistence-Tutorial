@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id='singlebeer'>
+        <p>Name: {{ beer.name }}</p>
+        <p>Locality: {{ beer.get_locality_display }}</p>
+        <p>Brewery: <a href='/brewerys/{{ beer.brewery.slug }}/'>{{ beer.brewery }}</a></p>
+    </div>
+{% endblock %}
