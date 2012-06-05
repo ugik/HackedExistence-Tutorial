@@ -110,6 +110,9 @@ TEMPLATE_DIRS = (
     '/home/Django/video1/templates',
     )
 
+# provide get_profile()
+AUTH_PROFILE_MODULE = 'drinker.Drinker'
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,6 +124,7 @@ INSTALLED_APPS = (
     'beer',
     'tinymce',
     'pages',
+    'drinker',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
