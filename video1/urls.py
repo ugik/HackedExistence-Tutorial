@@ -13,6 +13,8 @@ urlpatterns = patterns('',
     (r'^beers/(?P<beerslug>.*)/$', 'beer.views.SpecificBeer'),
     (r'^brewerys/(?P<breweryslug>.*)/$', 'beer.views.SpecificBrewery'),
     (r'^register/$', 'drinker.views.DrinkerRegistration'),
+    (r'^login/$', 'drinker.views.LoginRequest'),
+    (r'^logout/$', 'drinker.views.LogoutRequest'),
 )
 
 
