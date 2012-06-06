@@ -113,6 +113,10 @@ TEMPLATE_DIRS = (
 # provide get_profile()
 AUTH_PROFILE_MODULE = 'drinker.Drinker'
 
+# login settings
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/profile/'
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',

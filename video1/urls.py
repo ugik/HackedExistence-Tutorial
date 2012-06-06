@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     (r'^reset/(?P<uidb36>[0-9A-Za-z]*)-(?P<token>.*)/$', 'django.contrib.auth.views.password_reset_confirm'),
     (r'^reset/done/$', 'django.contrib.auth.views.password_reset_complete'),
     (r'^direct/$', direct_to_template, {'template': 'direct.html', 'extra_context': {'showDirect': True}}),
-    
+    (r'^profile/$', 'drinker.views.Profile'),
 )
 
 
