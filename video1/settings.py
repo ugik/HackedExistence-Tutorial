@@ -107,8 +107,8 @@ ROOT_URLCONF = 'video1.urls'
 WSGI_APPLICATION = 'video1.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/Django/video1/templates',
-    )
+    '/home/gk/Django/HackedExistence-Tutorial/video1/templates/',    
+)
 
 # provide get_profile()
 AUTH_PROFILE_MODULE = 'drinker.Drinker'
@@ -128,6 +128,17 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
+
+# test email setup
+# EMAIL_HOST = 'localhost'
+# EMAIL_PORT = 1025
+
+# gmail SMTP setup
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ugikma@gmail.com'
+EMAIL_HOST_PASSWORD = 'cassimere'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
